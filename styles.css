@@ -1,0 +1,110 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 920px;
+  margin: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card common styles */
+.card {
+  padding: 3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin: 2rem 0;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual card colors */
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Button styles */
+.btn {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all 0.3s ease;
+}
+
+.sedan .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  
+  .card p {
+    margin-bottom: 5rem;
+  }
+}
